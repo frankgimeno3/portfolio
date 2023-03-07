@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+
+/* CLASES NAVBAR !!!!!!!!!!!!!!!*/
+.btn {
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  padding: 25px;
+  padding-top: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  height: 10vh;
+  padding-top : 5px;
+  align-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* CLASES CARD QUE CRECE !!!!!!!!!!!!!!!*/
+
+/* CLASES LIBRERIA HABILIDADES !!!!!!!!!!!!!!!*/
+
+ .cardz {
+  width: 610px;
+  height: 254px;
+  border-radius: 4px;
+  background: #3b3b3b;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 5px;
+  padding: .4em;
+}
+
+.cardz p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background: #3b3b3b;
+  border: 1px solid #32d6c9;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.cardz p:hover {
+  flex: 4;
+}
+
+.cardz p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: #32d6c9;
+  letter-spacing: .1em;
+}
+
+.cardz p:hover span {
+  transform: rotate(0);
+}
+  /* AQUI EMPIEZA BODY */
+body {
+  background-color:#171717;
+  font-family: montserrat;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Fuente del texto */
+body, h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+h1{
+  font-size: 60px
+}
+h2{
+  font-size: 40px
+}
+h3{
+  font-size: 20px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Componente principal */
+.mainComponent {
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Cuadrantes */
+.boxcontainer{
+  margin: 4vw;
+  margin-top: 0;
+  border-radius: 5%;
+  width: 60vw;
+  background-color: #212121;
+}
+
+
+
+/* myName y frontendBackend */
+.myName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  padding: 5%;
+  transition: all 0.3s ease-in-out; /* Añade una transición suave al cambio de tamaño */
+
+}
+
+.frontendBackend {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 2%;
+}
+
+.profile-img{
+  border-radius: 50%;
+  margin: 0 1vw;
+  width: 25vh;
+  height: auto;
+
+}
+
+.rounded-img {
+  border-radius: 20%;
+  margin: 0 1vw;
+  width: 15vh;
+  height: auto;
+  transition: all 0.3s ease-in-out; /* Añade una transición suave al cambio de tamaño */
+
+}
+
+.rounded-img:hover, .myName:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 120% */
+}
+
+.secondQuadrant{
+  padding-left: 5%;
+  padding-top: 3.5%;
+  
+}
+.secondQuadrant h3{
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.thirdQuadrant, .forthQuadrant{
+  padding-top: 2%;
+  text-align: center;
+}
+
+.colornautsimg{
+  display: flex;
+  width: 50vw;
+  height: auto;
+  padding: 10px;
 }
